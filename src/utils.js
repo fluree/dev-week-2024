@@ -57,7 +57,7 @@ export function getOrSetId() {
     const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
     const randomNumberString = generateRandomNumberString();
 
-    const id = `${randomAdjective}-${randomNoun}-${randomNumberString}`;
+    id = `${randomAdjective}-${randomNoun}-${randomNumberString}`;
 
     localStorage.setItem('devWeekId', id);
   }
